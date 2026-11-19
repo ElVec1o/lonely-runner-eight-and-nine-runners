@@ -22,6 +22,14 @@ authors:
 license: CC-BY-4.0
 repository-code: "https://github.com/ElVec1o/lonely-runner-eight-and-nine-runners"
 version: 1.0.0
+doi: 10.5281/zenodo.24359604
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24359604
+    description: "Version 1.0.0 (Zenodo)"
+  - type: doi
+    value: 10.5281/zenodo.24359603
+    description: "All versions (Zenodo concept DOI)"
 type: software
 date-released: 2026-11-19
 keywords:
