@@ -1,0 +1,8 @@
+theorem LRSpectrumFull.EightV4.Cert113.lemma7Check_seven_p113 : lemma7Check 7 113 = true
+'LRSpectrumFull.EightV4.Cert113.lemma7Check_seven_p113' depends on axioms: [propext, Classical.choice, Quot.sound]
+verified_at: 2026-09-30 03:19:25  total_wall_s: 1796
+generator: repro/eight/generator/l7v4.rs sha256 f467166f10327a49eba12adae2c1a7373cc24963350683a0c1457d5f805a61a1
+checker: lean/LRSpectrumFull/EightCheckV4.lean sha256 76166bdc05e1cdd7276d516ac6240e1412c7608d1fb07c4d127bdb2aa15f85a1
+soundness: lean/LRSpectrumFull/EightCheckSound.lean sha256 27236b6dbb5b9a777bf5628257918bcf3bfe4566b4446bf71e6e5d79c624c0fb
+toolchain: leanprover/lean4:v4.30.0
+combined_sha256 b1c391644464f81efa95cb48a5e7070cea5eee40ba7881c7b940c3c3600e0f24

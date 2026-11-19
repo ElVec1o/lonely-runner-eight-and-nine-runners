@@ -1,0 +1,90 @@
+# Recorded printouts of the final assembly (raw lean, one process per step, 19 November 2026; development machine, macOS, 24 GB). NOT re-run for the shipped files.
+# Step times and peak RSS are from /usr/bin/time -l. Sources of these lines: the logs of the three steps.
+
+## Steps 1 to 3 (EightRunnersReal 'real', Assemble9 'a9', Assemble9Final 'a9f')
+== real
+      126.94 real         3.22 user        12.56 sys
+          4533534720  maximum resident set size
+== a9
+'LRSpectrumFull.NineSound.Plan9.Assemble9.pd36' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LRSpectrumFull.NineSound.Plan9.Assemble9.nine_runners_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+LRSpectrumFull.NineSound.Plan9.Assemble9.nine_runners_final : LRSpectrumFull.NineSound.LRC7 →
+  ∀ (v : Fin 8 → ℤ), (∀ (i : Fin 8), 0 < v i) → 1 / 9 ≤ LRSpectrumFull.ML v
+       91.16 real         4.80 user        12.90 sys
+          5570330624  maximum resident set size
+== a9f
+'LRSpectrumFull.NineSound.Plan9.Assemble9Final.lrc7_of_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LRSpectrumFull.NineSound.Plan9.Assemble9Final.nine_runners_unconditional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LRSpectrumFull.NineSound.Plan9.Assemble9Final.nine_runners_unconditional : ∀ (v : Fin 8 → ℤ),
+  (∀ (i : Fin 8), 0 < v i) → 1 / 9 ≤ LRSpectrumFull.ML v
+      112.24 real         5.20 user        13.20 sys
+          5910315008  maximum resident set size
+
+## Axioms of the eight-runner chain (separate lean run, imports of EightE5 / BarajasSerra*)
+'LRSpectrumFull.EightE5.eight_runners_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LRSpectrumFull.BarajasSerra.LRC6_barajasSerra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LRSpectrumFull.EightE5.mssGap7_holds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LRSpectrumFull.EightE5.eight_runners_unconditional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p101_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p103_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p107_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p109_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p113_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p127_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p131_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p137_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p139_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p149_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p151_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p157_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p163_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p31_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p37_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p43_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p47_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p53_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p59_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p61_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p67_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p71_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p73_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p79_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p83_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p89_verified,
+ LRSpectrumFull.EightCert27.lemma7Check_seven_p97_verified]
+LRSpectrumFull.EightE5.eight_runners_of : LRSpectrumFull.EightPlan.LRC6 →
+  (∀ p ∈ LRSpectrumFull.EightPlan.rosenfeldS, LRSpectrumFull.lemma7Check 7 p = true) →
+    ∀ (v : Fin 7 → ℤ), (∀ (i : Fin 7), 0 < v i) → 1 / 8 ≤ LRSpectrumFull.ML v
+def LRSpectrumFull.EightPlan.LRC6 : Prop :=
+∀ (u : Fin (5 + 1) → ℤ), (∀ (i : Fin (5 + 1)), 0 < u i) → 1 / (5 + 2) ≤ LRSpectrumFull.ML u
+def LRSpectrumFull.EightPlan.rosenfeldS : Finset ℕ :=
+{31, 37, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157,
+  163}
+
+## EightRunnersReal against the staged libraries (code/eight/stage/assemble_real.sh -> repro/eight/stage/assemble_real.sh)
+'LRSpectrumFull.EightRunnersReal.eight_runners_unconditional_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LRSpectrumFull.EightRunnersReal.hchk_all_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+      132.30 real         2.94 user        12.36 sys
+          4335697920  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              258805  page reclaims
+              936684  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               37489  voluntary context switches
+              873591  involuntary context switches
+        108151192330  instructions retired
+         58717067275  cycles elapsed
+          1082604800  peak memory footprint

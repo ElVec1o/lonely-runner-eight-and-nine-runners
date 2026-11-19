@@ -1,0 +1,30 @@
+# repro/eight/stage/regen_e8stage.sh run on the final bundle layout (all 27 primes, one at a time, launcher ceiling 700 MB), 19 November 2026; no Lean
+built repro/eight/bin/l7v4s
+P31 OK: 5 files identical to E8STAGE.tsv
+P37 OK: 5 files identical to E8STAGE.tsv
+P43 OK: 6 files identical to E8STAGE.tsv
+P47 OK: 6 files identical to E8STAGE.tsv
+P53 OK: 8 files identical to E8STAGE.tsv
+P59 OK: 9 files identical to E8STAGE.tsv
+P61 OK: 10 files identical to E8STAGE.tsv
+P67 OK: 12 files identical to E8STAGE.tsv
+P71 OK: 12 files identical to E8STAGE.tsv
+P73 OK: 16 files identical to E8STAGE.tsv
+P79 OK: 15 files identical to E8STAGE.tsv
+P83 OK: 19 files identical to E8STAGE.tsv
+P89 OK: 28 files identical to E8STAGE.tsv
+P97 OK: 34 files identical to E8STAGE.tsv
+P101 OK: 30 files identical to E8STAGE.tsv
+P103 OK: 28 files identical to E8STAGE.tsv
+P107 OK: 37 files identical to E8STAGE.tsv
+P109 OK: 40 files identical to E8STAGE.tsv
+P113 OK: 50 files identical to E8STAGE.tsv
+P127 OK: 42 files identical to E8STAGE.tsv
+P131 OK: 57 files identical to E8STAGE.tsv
+P137 OK: 80 files identical to E8STAGE.tsv
+P139 OK: 67 files identical to E8STAGE.tsv
+P149 OK: 76 files identical to E8STAGE.tsv
+P151 OK: 68 files identical to E8STAGE.tsv
+P157 OK: 89 files identical to E8STAGE.tsv
+P163 OK: 100 files identical to E8STAGE.tsv
+REGEN OK: 949 files identical

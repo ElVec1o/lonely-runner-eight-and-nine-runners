@@ -1,0 +1,6 @@
+76.15 real         4.41 user        10.89 sys
+5759565824  maximum resident set size
+0  average shared memory size
+0  average unshared data size
+0  average unshared stack size
+310669  page reclaims

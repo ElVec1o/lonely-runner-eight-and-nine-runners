@@ -1,0 +1,10 @@
+manifest: 25988 modules (repro/MANIFEST.tsv); selected 25988
+---- plan validation ----
+ok   lean-toolchain = leanprover/lean4:v4.30.0
+ok   lake-manifest.json pins mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f
+per-prime build order: 36 primes in PARAMS.tsv; violations (a prime without rows, PD not last in its range, rows of another prime inside a range, Assemble9Final not last): 0
+selected 25988 modules; in-bundle problems 0; omitted generated sources missing 7849, different 0; order violations in the manifest 0
+ok   free disk 28 GB >= floor 3 GB
+machine: lean RSS now 0 MB (gate: wait while RSS + 9500 > 18000); wrapper='none'; lock=repro/logs/build.lock; ceiling=9000 MB
+cost: from-scratch --run = about 42 h of summed module wall time (results.tsv, last successful build of each prime, plus the shared modules; NOT measured end to end in one run) + lake start-up per module
+PLAN INCOMPLETE: the omitted generated families (D01, D2, TD* of every prime) are not (all) present or differ: run regen_data.sh --all --install

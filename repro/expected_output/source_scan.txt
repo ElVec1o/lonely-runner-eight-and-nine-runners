@@ -1,0 +1,37 @@
+code lines after stripping comments:   812802 in 25960 files
+\bsorry\b                          lines 0  files 0
+native_decide                      lines 0  files 0
+^[^:]*:[0-9]+:\s*axiom\b           lines 0  files 0
+\bunsafe\b                         lines 0  files 0
+implemented_by                     lines 0  files 0
+@\[extern                          lines 0  files 0
+\bopaque\b                         lines 0  files 0
+Classical\.choose                  lines 0  files 0
+ofReduceBool                       lines 0  files 0
+trustCompiler                      lines 0  files 0
+skipKernelTC                       lines 0  files 0
+\bmacro\b                          lines 0  files 0
+\belab\b                           lines 0  files 0
+\bsyntax\b                         lines 0  files 0
+\bnotation\b                       lines 11  files 11
+#eval                              lines 0  files 0
+run_cmd                            lines 0  files 0
+initialize                         lines 0  files 0
+\bpartial\b                        lines 0  files 0
+csimp                              lines 0  files 0
+maxHeartbeats                      lines 25896  files 25866
+set_option                         lines 77493  files 25867
+decide +kernel lines: 14241
+
+files with a (non-comment) 'notation' line:
+LRSpectrumFull/Delta2CubeAllOdd.lean
+LRSpectrumFull/Delta2CubeCert.lean
+LRSpectrumFull/Delta2CubeDecouple.lean
+LRSpectrumFull/Delta2CubeFull.lean
+LRSpectrumFull/Delta2CubeLine.lean
+LRSpectrumFull/Delta2CubePair.lean
+LRSpectrumFull/Delta2CubePara.lean
+LRSpectrumFull/Delta2CubeTriple.lean
+LRSpectrumFull/Delta2CubeWitness.lean
+LRSpectrumFull/Delta2DisjointTriples.lean
+LRSpectrumFull/Delta2SeparationWindow.lean

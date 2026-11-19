@@ -1,0 +1,4 @@
+'LRSpectrumFull.NineSound.Plan9.Assemble9.pd36' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LRSpectrumFull.NineSound.Plan9.Assemble9.nine_runners_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+LRSpectrumFull.NineSound.Plan9.Assemble9.nine_runners_final : LRSpectrumFull.NineSound.LRC7 →
+  ∀ (v : Fin 8 → ℤ), (∀ (i : Fin 8), 0 < v i) → 1 / 9 ≤ LRSpectrumFull.ML v

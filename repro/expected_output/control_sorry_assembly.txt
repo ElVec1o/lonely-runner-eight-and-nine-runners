@@ -1,0 +1,5 @@
+CtlSorry9.lean:43:8: warning: declaration uses `sorry`
+'LRSpectrumFull.NineSound.Plan9.CtlSorry9.nine_runners_final' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,29 @@
+# E8Stage source regeneration check, 19 November 2026 (Rust and shell, no Lean). Per prime: (a) combined sha256 of the output of the development generator equals the committed record; (b) cleaned generator vs original: files of lines 2..n identical (body_diffs); (c) line 1 of every cleaned file is the expected header (bad_headers).
+P31 record_match files_old=5 files_new=5 body_diffs=0 bad_headers=0 bytes=812104
+P37 record_match files_old=5 files_new=5 body_diffs=0 bad_headers=0 bytes=1737498
+P43 record_match files_old=6 files_new=6 body_diffs=0 bad_headers=0 bytes=3168895
+P47 record_match files_old=6 files_new=6 body_diffs=0 bad_headers=0 bytes=3724370
+P53 record_match files_old=8 files_new=8 body_diffs=0 bad_headers=0 bytes=6338606
+P59 record_match files_old=9 files_new=9 body_diffs=0 bad_headers=0 bytes=9411552
+P61 record_match files_old=10 files_new=10 body_diffs=0 bad_headers=0 bytes=10028437
+P67 record_match files_old=12 files_new=12 body_diffs=0 bad_headers=0 bytes=14336906
+P71 record_match files_old=12 files_new=12 body_diffs=0 bad_headers=0 bytes=14935529
+P73 record_match files_old=16 files_new=16 body_diffs=0 bad_headers=0 bytes=22608611
+P79 record_match files_old=15 files_new=15 body_diffs=0 bad_headers=0 bytes=20507584
+P83 record_match files_old=19 files_new=19 body_diffs=0 bad_headers=0 bytes=28417592
+P89 record_match files_old=28 files_new=28 body_diffs=0 bad_headers=0 bytes=43023609
+P97 record_match files_old=34 files_new=34 body_diffs=0 bad_headers=0 bytes=54249783
+P101 record_match files_old=30 files_new=30 body_diffs=0 bad_headers=0 bytes=49495482
+P103 record_match files_old=28 files_new=28 body_diffs=0 bad_headers=0 bytes=45393064
+P107 record_match files_old=37 files_new=37 body_diffs=0 bad_headers=0 bytes=61193986
+P109 record_match files_old=40 files_new=40 body_diffs=0 bad_headers=0 bytes=66430216
+P113 record_match files_old=50 files_new=50 body_diffs=0 bad_headers=0 bytes=84067307
+P127 record_match files_old=42 files_new=42 body_diffs=0 bad_headers=0 bytes=74289731
+P131 record_match files_old=57 files_new=57 body_diffs=0 bad_headers=0 bytes=100379193
+P137 record_match files_old=80 files_new=80 body_diffs=0 bad_headers=0 bytes=138811638
+P139 record_match files_old=67 files_new=67 body_diffs=0 bad_headers=0 bytes=118778605
+P149 record_match files_old=76 files_new=76 body_diffs=0 bad_headers=0 bytes=137094425
+P151 record_match files_old=68 files_new=68 body_diffs=0 bad_headers=0 bytes=125324500
+P157 record_match files_old=89 files_new=89 body_diffs=0 bad_headers=0 bytes=160943200
+P163 record_match files_old=100 files_new=100 body_diffs=0 bad_headers=0 bytes=181997555
+TOTAL: 27 of 27 primes record_match; body_diffs 0, bad_headers 0 in all; 949 files, 1577499978 bytes

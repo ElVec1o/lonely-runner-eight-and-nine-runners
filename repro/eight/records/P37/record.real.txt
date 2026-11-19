@@ -1,0 +1,8 @@
+theorem LRSpectrumFull.EightV4.Cert37.lemma7Check_seven_p37 : lemma7Check 7 37 = true
+'LRSpectrumFull.EightV4.Cert37.lemma7Check_seven_p37' depends on axioms: [propext, Classical.choice, Quot.sound]
+verified_at: 2026-09-29 23:30:12  total_wall_s: 139
+generator: repro/eight/generator/l7v4.rs sha256 f467166f10327a49eba12adae2c1a7373cc24963350683a0c1457d5f805a61a1
+checker: lean/LRSpectrumFull/EightCheckV4.lean sha256 76166bdc05e1cdd7276d516ac6240e1412c7608d1fb07c4d127bdb2aa15f85a1
+soundness: lean/LRSpectrumFull/EightCheckSound.lean sha256 27236b6dbb5b9a777bf5628257918bcf3bfe4566b4446bf71e6e5d79c624c0fb
+toolchain: leanprover/lean4:v4.30.0
+combined_sha256 94704f6cd52050168dfea28781822287b0d1bdd09116a1af536f16d8b85353b0

@@ -1,0 +1,16 @@
+# assemble_final.sh --plan against the development tree (read-only; LEAN_DIR=lean, ARCHIVES=the 36 per-prime archives, STAGE_OLEAN=the staged eight-runner libraries; PKG_LEAN_PATH shortened). 19 November 2026.
+ok   source EightRunnersReal.lean present
+ok   source NineSound/Assemble9.lean present
+ok   source NineSound/Assemble9Final.lean present
+ok   shared module built: NineSound/Final9
+ok   shared module built: EightE5
+ok   shared module built: BarajasSerraLRC6Plan
+ok   shared module built: BarajasSerraLRC6
+staged eight-runner libraries: 27 of 27 Asm.olean present in /DEV_TREE/staged_oleans
+archives: 36 of 36 match ARCHIVES.sha256, 0 missing or different
+LEAN_PATH would be: /DEV_TREE/work/assemble_final/farm:<mathlib and other package entries>:/DEV_TREE/staged_oleans
+farm: /DEV_TREE/work/assemble_final/farm/LRSpectrumFull/<entry> -> /DEV_TREE/lean/.lake/build/lib/lean/LRSpectrumFull/<entry> for every entry except NineSound; NineSound/<entry> likewise, except NineSound/G<p> -> /DEV_TREE/work/assemble_final/root (restored archives)
+step 1: LEAN_PATH=<above> lean -R /DEV_TREE/lean -o /DEV_TREE/work/assemble_final/farm/LRSpectrumFull/EightRunnersReal.olean /DEV_TREE/lean/LRSpectrumFull/EightRunnersReal.lean
+step 2: same for NineSound/Assemble9   (expect 'depends on axioms: [propext, Classical.choice, Quot.sound]' for pd36 and nine_runners_final)
+step 3: same for NineSound/Assemble9Final (expect the same line for lrc7_of_eight and nine_runners_unconditional, then the #check line)
+ASSEMBLE-FINAL PLAN VALID
